@@ -5,7 +5,9 @@
 		"dev": "node build.js --dev"
 	},
 	"dependencies": {
-		"mithril": "^2.2.2"
+		"@tailwindcss/cli": "^4.3.3",
+		"mithril": "^2.2.2",
+		"tailwindcss": "^4.3.3"
 	},
 	"devDependencies": {
 		"esbuild": "^0.25.9"
