@@ -8,7 +8,7 @@ export const Input = () => {
       <>
         <h2>JSX Input Component</h2>
         <input
-          type="text"
+          className="text-blue-500"
           value={value}
           oninput={({ target }) => value = target.value}
         />

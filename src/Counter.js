@@ -6,7 +6,7 @@ export const Counter = () => {
   return {
     view: () => (
       m('div',
-        m('h2', 'Counter'),
+        m('h2' ,{class: "text-red-500"}, 'Counter'),
         m('h3', num),
         m('button', { onclick: () => num += 1 }, 'Increment'),
         m('button', { onclick: () => num -= 1 }, 'Decrement')
