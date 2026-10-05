@@ -197,32 +197,8 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-\[0vh\] {
-    margin-top: 0vh;
-  }
-  .mt-\[1vh\] {
-    margin-top: 1vh;
-  }
-  .mt-\[5vh\] {
-    margin-top: 5vh;
-  }
-  .mt-\[10vh\] {
-    margin-top: 10vh;
-  }
   .mt-\[11vh\] {
     margin-top: 11vh;
-  }
-  .mt-\[12vh\] {
-    margin-top: 12vh;
-  }
-  .mt-\[13vh\] {
-    margin-top: 13vh;
-  }
-  .mt-\[15vh\] {
-    margin-top: 15vh;
-  }
-  .mt-\[20vh\] {
-    margin-top: 20vh;
   }
   .flex {
     display: flex;
@@ -230,20 +206,11 @@
   .table {
     display: table;
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-26 {
-    height: calc(var(--spacing) * 26);
-  }
   .h-30 {
     height: calc(var(--spacing) * 30);
-  }
-  .h-\[80vh\] {
-    height: 80vh;
   }
   .h-\[100vh\] {
     height: 100vh;
@@ -251,20 +218,8 @@
   .h-\[fullvh\] {
     height: fullvh;
   }
-  .h-full {
-    height: 100%;
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
-  .w-15 {
-    width: calc(var(--spacing) * 15);
-  }
   .w-30 {
     width: calc(var(--spacing) * 30);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-\[90vw\] {
     width: 90vw;
@@ -299,6 +254,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   :where(.space-x-3 > :not(:last-child)) {
     --tw-space-x-reverse: 0;
     margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
@@ -318,11 +276,11 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .border-red-500 {
-    border-color: var(--color-red-500);
-  }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
   }
   .bg-gray-950 {
     background-color: var(--color-gray-950);
@@ -332,9 +290,6 @@
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
-  }
-  .bg-transparent {
-    background-color: transparent;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -348,14 +303,11 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .text-center {
-    text-align: center;
-  }
-  .align-bottom {
-    vertical-align: bottom;
   }
   .text-sm {
     font-size: var(--text-sm);
