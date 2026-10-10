@@ -36,6 +36,7 @@ const config = {
 
     await ctx.serve({
       servedir: resolve('public'),
+      host: '0.0.0.0',
       port: PORT
     });
 

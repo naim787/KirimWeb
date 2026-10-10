@@ -3,6 +3,7 @@ package main
 import (
   "github.com/gofiber/fiber/v3"
   "github.com/gofiber/fiber/v3/middleware/cors"
+  "github.com/gofiber/fiber/v3/middleware/static"
   "log"
   "fmt"
 )
@@ -16,9 +17,14 @@ app.Use(cors.New(cors.Config{
 	AllowHeaders: []string{"Origin", "Content-Type", "Accept", "Authorization"},
 }))
   
+app.Use("/", static.New("./public"))
+  
+	// Render HTML pada route /
 	app.Get("/", func(c fiber.Ctx) error {
-		return c.SendString("Hello, World!")
+		return c.SendFile("./public/index.html")
 	})
+
+	// Sajikan JS, CSS, gambar, dan file statis lainnya
 
   app.Post("/files/upload", func(c fiber.Ctx) error {
     file, err := c.FormFile("file")
@@ -47,5 +53,5 @@ app.Get("/files/:filename/download", func(c fiber.Ctx) error {
 
 
   fmt.Println("http://localhost:3000")
-	log.Fatal(app.Listen(":3000"))
+	log.Fatal(app.Listen("0.0.0.0:3001"))
 }

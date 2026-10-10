@@ -103,7 +103,7 @@ export const Container = () => {
 
               <div className="w-30">
                 <img
-                  src="/favicon.png"
+                  src={file.name}
                   className="w-full h-full object-contain"
                 />
               </div>
@@ -115,8 +115,8 @@ export const Container = () => {
               <div className="w-30 flex">
                 <a
                   href={file.url}
-                  download={file.name}
-                  className="px-3 py-2 bg-green-500 text-white m-auto rounded-md"
+                  download={file.url}
+                  className="px-3 py-2 bg-red-500 text-white m-auto rounded-md"
                 >
                   simpan
                 </a>
